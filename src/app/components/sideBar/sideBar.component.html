@@ -1,0 +1,135 @@
+
+<button type="button" id="sidebarCollapse"  style="position: absolute;top: 0;left: 210px;top: 10px;" (click)="toggleMenu()" class="btn btn-primary">
+  <i class="fa fa-bars"></i>
+  <span class="sr-only">Toggle Menu</span>
+</button>
+
+<div class="wrapper d-flex align-items-stretch">
+  <nav id="sidebar" [class.active]="classApplied" >
+  <ul class="list-unstyled components mb-5">
+    <li routerLinkActive="active">
+      <a [routerLink]="['/about']" class="hide-text"><span><img src="assets/images/dp2.png"></span>
+        <span class="responsive_font">
+        Home
+      </span> </a>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a href="#" class="dropbtn"><span><img src="assets/images/dp1.png"></span><span class="responsive_font">
+          Directory
+        </span><span class="right-arrow" class="responsive_font"><img src="assets/images/rightAngle.png"></span></a>
+        <div class="dropdown-content">
+          <a href="#" style="padding-right: 80px !important;">Staff</a>
+          <a href="#" style="padding-right: 52px !important;">Members</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a routerLink="/crm-advanch-search"><span><img src="assets/images/dp10.png"></span>
+      <span class="responsive_font">CRM</span></a>
+    </li>
+    <li>
+      <a routerLink="/contact"><span><img src="assets/images/dp4.png"></span><span class="responsive_font">
+        Data List
+      </span></a>
+    </li>
+    <li>
+      <a routerLink="/vetting"><span><img src="assets/images/dp3.png"></span>
+        <span class="responsive_font">
+          MOU Vetting
+      </span> </a>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp5.png"></span><span class="responsive_font">
+        Committees
+      </span> </a>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp6.png"></span>
+        <span class="responsive_font">Events/Projects</span></a>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp9.png"></span>
+       <span class="responsive_font">Manage</span> </a>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a href="#" class="dropbtn"><span><img src="assets/images/dp1.png"></span><span class="responsive_font">
+          Directory
+        </span><span class="right-arrow" class="responsive_font"><img src="assets/images/rightAngle.png"></span></a>
+        <div class="dropdown-content">
+          <a href="#" style="padding-right: 80px !important;">Staff</a>
+          <a href="#" style="padding-right: 52px !important;">Members</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a routerLink="/crm-advanch-search"><span><img src="assets/images/dp10.png"></span>
+      <span class="responsive_font">CRM</span></a>
+    </li>
+    <li>
+      <a routerLink="/contact"><span><img src="assets/images/dp4.png"></span><span class="responsive_font">
+        Data List
+      </span></a>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp3.png"></span>
+        <span class="responsive_font">
+        Communities
+      </span> </a>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp5.png"></span><span class="responsive_font">
+        Committees
+      </span> </a>
+    </li>
+    
+    <li>
+      <a href="#"><span><img src="assets/images/dp6.png"></span>
+        <span class="responsive_font">Events/Projects</span></a>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp9.png"></span>
+       <span class="responsive_font">Manage</span> </a>
+    </li>
+    <li>
+      <div class="dropdown">
+        <a href="#" class="dropbtn"><span><img src="assets/images/dp1.png"></span><span class="responsive_font">
+          Directory
+        </span><span class="right-arrow" class="responsive_font"><img src="assets/images/rightAngle.png"></span></a>
+        <div class="dropdown-content">
+          <a href="#" style="padding-right: 80px !important;">Staff</a>
+          <a href="#" style="padding-right: 52px !important;">Members</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="#"><span><img src="assets/images/dp9.png"></span>
+        <span class="responsive_font">LogOut</span></a>
+    </li>
+  </ul>
+
+  
+  </nav>
+
+    <!-- Page Content  -->
+  <div id="content" class="main-container">
+    <div class="container" style="padding: 20px; height: 100vh; overflow: auto; padding-bottom: 100px;">
+      <router-outlet></router-outlet>
+     </div>
+  </div> 
+ 
+</div>
+
+<!-- <script>
+ $(document).ready(function(){
+  $("#sidebarCollapse").click(function(){
+  $(".hide-text").hide();
+});
+$("#sidebarCollapse").click(function(){
+  $(".hide-text").show();
+});
+}); 
+</script> -->
+
+
